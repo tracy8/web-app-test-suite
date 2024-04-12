@@ -8,6 +8,7 @@ test ('Password reset', async ({page}) => {
     await page.getByPlaceholder('Username').fill('Admin');
     await page.getByPlaceholder('Password').fill('admin123');
     await page.getByRole('button', { name: 'Login' }).click();
+    await page.pause()
     await page.locator('i.oxd-icon.bi-caret-down-fill.oxd-userdropdown-icon').click();
     await page.getByRole('menuitem', { name: 'Change Password' }).click();
     await page.getByRole('textbox').nth(1).fill('admin123');
