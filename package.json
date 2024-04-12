@@ -6,5 +6,8 @@
     "@playwright/test": "^1.43.0",
     "@types/node": "^20.12.7"
   },
-  "scripts": {}
+  "scripts": {
+    "e2e": "playwright test --project chromium --headed",
+    "e2e:ui": "playwright test --ui --project chromium --headed"
+  }
 }
