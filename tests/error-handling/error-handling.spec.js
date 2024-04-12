@@ -1,7 +1,7 @@
 import {test, expect } from '@playwright/test';
 
-//Successful registration
-test ('registration', async ({page}) => {
+//How the application handles unexpected errors.
+test ('error handling', async ({page}) => {
 
     await page.goto('https://sahaavi.github.io/Form-Validation-JavaScript/index.html')
     await page.pause()
